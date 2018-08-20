@@ -1,0 +1,16 @@
+Source: dadafilterbank
+Section: science
+Priority: extra
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends: cmake,
+ debhelper (>=9),
+ nvidia-cuda-toolkit,
+ psrdada
+Standards-Version: 3.9.8
+Homepage: https://github.com/AA-ALERT/dadafilterbank
+
+Package: dadafilterbank
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Connect to a PSRdada ringbuffer and write out the data in filterbank format.
